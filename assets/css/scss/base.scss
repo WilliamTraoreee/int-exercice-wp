@@ -1,0 +1,171 @@
+// COLORS 
+
+$white: #fff;
+$black: #000;
+$dark: #0C0C0D;
+$grey: #202023;
+$red: #F25F5F;
+$grey2: #747477;
+
+// FONTS 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+$open: 'Open Sans', sans-serif;
+
+// FUNCTIONS
+
+@function space($size) {
+  @return $size * 8px;
+}
+
+// BODY 
+
+body {
+  background: $dark;
+  color: $white;
+  font-size: 16px;
+  font-family: $open;
+}
+
+// CONTAINER 
+
+.container {
+  width: 1160px;
+  padding: space(3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// HEADER 
+
+header {
+  width: 100%;
+  height: 70px;
+  background: $dark;
+  border-bottom: 1px solid $grey;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.3em;
+
+    span {
+      color: $red;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+
+      li {
+        margin-left: space(2);
+        font-weight: 700;
+        font-size: .8em;
+        transition: .4s;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+// BTN 
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background: $red;
+  color: $white;
+  font-weight: 700;
+  font-size: .8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: space(.5);
+  transition: .4s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// FOOTER 
+
+footer {
+  margin-bottom: space(5);
+  text-align: center;
+
+  h5 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: space(1);
+    
+    span {
+      color: $red;
+    }
+  }
+
+  p {
+    color: $grey2;
+    font-size: .8em;
+  }
+}
+
+
+
+
+// RESPONSIVE 
+
+@media screen and (max-width: 1160px) {
+
+  // Container
+  .container {
+    width: 1024px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  // Container
+  .container {
+    width: 800px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  // Container
+  .container {
+    width: 640px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  // Container
+  .container {
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  // Container
+  .container {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #0C0C0D;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 1160px;
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: #0C0C0D;
+  border-bottom: 1px solid #202023;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+header .logo {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+header .logo span {
+  color: #F25F5F;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-left: 16px;
+  font-weight: 700;
+  font-size: 0.8em;
+  transition: 0.4s;
+}
+header nav ul li:hover {
+  color: #F25F5F;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background: #F25F5F;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin-bottom: 40px;
+  text-align: center;
+}
+footer h5 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+footer h5 span {
+  color: #F25F5F;
+}
+footer p {
+  color: #747477;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 1160px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
+.head-title {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.head-title h1 {
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 1.2;
+}
+.head-title h1 span {
+  color: #F25F5F;
+}
+
+.last-movies {
+  margin-bottom: 40px;
+}
+.last-movies h2 {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-bottom: 24px;
+}
+.last-movies .btn {
+  margin: 24px auto 0 auto;
+}
+
+.last-articles {
+  margin-bottom: 40px;
+}
+.last-articles h2 {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-bottom: 24px;
+}
+.last-articles .btn {
+  margin: 24px auto 0 auto;
+}
+
+.list-articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.list-articles .post-article {
+  width: 32%;
+  margin-bottom: 16px;
+  transition: 0.4s;
+}
+.list-articles .post-article .thumbnail {
+  width: 100%;
+  height: 220px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.list-articles .post-article h3 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.list-articles .post-article h4 {
+  font-size: 0.8em;
+  color: #747477;
+}
+.list-articles .post-article:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 800px) {
+  .list-articles .post-article {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .list-articles .post-article {
+    width: 100%;
+  }
+}
+.list-movies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.list-movies .post-movie {
+  width: 15%;
+  position: relative;
+  margin-bottom: 16px;
+  transition: 0.4s;
+}
+.list-movies .post-movie .note {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background: #F25F5F;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+.list-movies .post-movie .thumbnail {
+  width: 100%;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.list-movies .post-movie h3 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.list-movies .post-movie h4 {
+  font-size: 0.8em;
+  color: #747477;
+}
+.list-movies .post-movie:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 1024px) {
+  .list-movies {
+    justify-content: space-between;
+  }
+  .list-movies .post-movie {
+    width: 24%;
+  }
+  .list-movies .post-movie .thumbnail {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .list-movies {
+    justify-content: space-between;
+  }
+  .list-movies .post-movie {
+    width: 32%;
+  }
+  .list-movies .post-movie .thumbnail {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .list-movies {
+    justify-content: space-between;
+  }
+  .list-movies .post-movie {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .list-movies {
+    justify-content: space-between;
+  }
+  .list-movies .post-movie {
+    width: 100%;
+  }
+  .list-movies .post-movie .thumbnail {
+    height: 430px;
+  }
+}
+.single-container .infos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.single-container .infos .thumbnail {
+  width: 30%;
+  margin-right: 3%;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+.single-container .infos h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+.single-container .infos p {
+  font-size: 0.8em;
+  color: #747477;
+}
+.single-container .content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.page-container h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin: 40px 0 56px 0;
+  text-align: center;
+}
+.page-container .content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.single-movie-container h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin: 40px 0 56px 0;
+  text-align: center;
+}
+.single-movie-container .movie-infos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.single-movie-container .movie-infos .thumbnail {
+  width: 30%;
+  margin-right: 3%;
+}
+.single-movie-container .movie-infos .thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.single-movie-container .movie-infos .infos {
+  width: 67%;
+}
+.single-movie-container .movie-infos .infos p {
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.single-movie-container .movie-infos .infos p b {
+  font-weight: 700;
+}
+.single-movie-container .critique h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.single-movie-container .critique p {
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 800px) {
+  .single-container .infos .thumbnail {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .single-container .infos .infos-content {
+    width: 100%;
+  }
+  .single-container .infos h1, .single-container .infos p {
+    text-align: center;
+  }
+
+  .single-movie-container .movie-infos .thumbnail {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .single-movie-container .movie-infos .infos {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

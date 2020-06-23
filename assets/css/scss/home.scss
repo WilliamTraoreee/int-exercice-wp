@@ -1,0 +1,51 @@
+// HEAD TITLE 
+
+.head-title {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 1.2;
+
+    span {
+      color: $red;
+    }
+  }
+}
+
+// LAST MOVIES 
+
+.last-movies {
+  margin-bottom: space(5);
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: space(3);
+  }
+
+  .btn {
+    margin: space(3) auto 0 auto;
+  }
+}
+
+// LAST ARTICLES 
+
+.last-articles {
+  margin-bottom: space(5);
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: space(3);
+  }
+
+  .btn {
+    margin: space(3) auto 0 auto;
+  }
+}

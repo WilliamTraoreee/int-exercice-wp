@@ -1,0 +1,151 @@
+// SINGLE 
+
+.single-container {
+
+  .infos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: space(3);
+
+    .thumbnail {
+      width: 30%;
+      margin-right: 3%;
+      height: 200px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: space(1);
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2em;
+      margin-bottom: space(1);
+    }
+
+    p {
+      font-size: .8em;
+      color: $grey2;
+    }
+  }
+
+  .content {
+    p {
+      line-height: 1.4;
+      margin-bottom: space(2);
+    }
+  }
+
+}
+
+// PAGE
+
+.page-container {
+
+  h1 {
+    font-weight: 700;
+    font-size: 2em;
+    margin: space(5) 0 space(7) 0;
+    text-align: center;
+  }
+
+  .content {
+    p {
+      line-height: 1.4;
+      margin-bottom: space(2);
+    }
+  }
+
+}
+
+// SINGLE MOVIE
+
+.single-movie-container {
+  h1 {
+    font-weight: 700;
+    font-size: 2em;
+    margin: space(5) 0 space(7) 0;
+    text-align: center;
+  }
+
+  .movie-infos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: space(3);
+
+    .thumbnail {
+      width: 30%;
+      margin-right: 3%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: space(1);
+      }
+    }
+
+    .infos {
+      width: 67%;
+
+      p {
+        margin-bottom: space(2);
+        line-height: 1.4;
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .critique {
+    h2 {
+      font-size: 1.3em;
+      font-weight: 700;
+      margin-bottom: space(3);
+    }
+
+    p {
+      line-height: 1.4;
+    }
+  }
+}
+
+// RESPONSIVE 
+
+@media screen and (max-width: 800px) {
+
+  .single-container {
+    .infos {
+      .thumbnail {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: space(3);
+      }
+
+      .infos-content {
+        width: 100%;
+      }
+
+      h1, p {
+        text-align: center;
+      }
+    }
+  }
+
+  .single-movie-container {
+    .movie-infos {
+      .thumbnail {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: space(3);
+      }
+
+      .infos {
+        width: 100%;
+      }
+    }
+  }
+
+}
